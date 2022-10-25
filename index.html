@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="card.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="fullcontent">
+     <div class="side1">
+       <div class="imgfront">
+          <img src="images/card-logo.svg" alt="">
+          <p class="topcardnm">0000 0000 0000 0000</p>
+          <div class="nam-date">
+            <p>MUSTAPHA ABIOLA</p>
+            <P class="carddate">09/27</P>
+          </div>
+       </div>
+        <div class="imageback">
+         <p class="cardcvv">346</p>
+        </div>
+     </div>
+    <div class="side2">
+      <div class="addcard">
+        <form action="Addcard.php">
+          <label for="flname" class="cardholdernm">CARDHOLDER NAME</label><br>
+          <input type="text" id="flname" name="flname" placeholder="e.g. Jane Appleseed"><br>
+          <label for="Cardnumbers" class="cardholdernm">CARD NUMBERS</label><br>
+          <input type="number" id="Cardnumbers" name="Cardnumbers"  placeholder="1234 5678 9123 0000"><br>
+          <div class="expncvc">
+            <label for="Expdate"></label>
+            <input type="number" id="Expdate" name="Expdate" placeholder="MM" class="mmyy">
+            <input type="number" id="Expdate" name="Expdate" placeholder="YY" class="mmyy"><br>
+            <label for="CVC"></label><br>
+          <input type="password" id="CVC" name="Security code" placeholder="CVC" class="cvc"><br><br>
+          </div>
+          <div class="submit">
+              <button type="submit">CONFIRM</button>
+       </form> 
+      </div>
+    </div>
+  </div>
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

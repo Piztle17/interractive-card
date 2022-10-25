@@ -1,0 +1,107 @@
+*   {
+      box-sizing: border-box;
+}
+body  {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.fullcontent  {
+display: flex;
+max-width: 100%;
+}
+.side1  {
+      background-color: rgba(100, 22, 100, 0.815);
+      width: 30%;
+}
+.side2  {
+    width: 70%;
+    background-color: white;
+    gap: 20px;
+    margin-left: 249px;
+    margin-top: 200px;
+}
+.imgfront  {
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 451px;
+    height: 235px;
+    border-radius: 8px;
+    margin: 200px 0px -120px 80px;
+}
+.imageback   {
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 451px;
+    height: 235px;
+    border-radius: 8px;
+    margin: 151px 0px 131px 187px;
+}
+.expncvc  {
+    display: flex;
+    
+}
+input   {
+    width: 60%;
+    padding: 14px;
+    margin: 18px;
+    border-radius: 8px;
+}
+.mmyy  {
+    width: 15%;
+}
+.cvc  {
+    width: 20%;
+}
+button  {
+    width: 61%;
+    padding: 11px;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+}
+.cardholdernm  {
+    margin-left: 20px;
+}
+.cardcvv  {
+    float: right;
+    margin-top: 111px;
+    margin-right: 49px;
+    color: white;
+}
+.topcardnm  {
+      text-align: center;
+      margin-top: 77px;
+      font-size: 38px;
+}
+.nam-date  {
+    display: flex;
+    margin-top: -32px;
+    margin-left: 36px;
+}
+.carddate  {
+    float: right;
+    margin-left: 182px;
+}
+@media only screen and (max-width: 760px) {
+    div.fullcontent{
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    div.side1{
+      width: 100%;
+      height: 70%;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    div.side2{
+      width: 100%;
+      height: auto;
+    }
+  }
